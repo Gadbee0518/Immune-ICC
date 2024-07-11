@@ -24,6 +24,14 @@ II. From the perspective of analytical methods
 &nbsp;&nbsp;&nbsp;&nbsp;e> We used the Scissor tool to jointly analyze single-cell data, batch sample RNA-Seq data, and clinical survival data. Scissor has the ability to measure the Pearson correlation between single-cell and bulk samples to quantify the similarity between single-cell data and bulk sample data. Then, it is combined with clinical phenotypes to generate a correlation matrix. Finally, we set Scissor to select the COX regression model in the correlation matrix and apply sparse penalties and graph regularization to the regression model in order to select single cells with high confidence;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;f> At the end of the process, we selected four subsets of immune cells. And observed the significant genes corresponding to the subgroups and the performance of the enriched pathways.
 
+# Data Availability Statement
+&nbsp;&nbsp;&nbsp;&nbsp;The authors used publicly available datasets. 
+The ICC transcriptome samples and their corresponding clinical phenotypes from GDC data portal (https://portal.gdc.cancer.gov/);<br>
+UCSC Xena portal (https://xena.ucsc.edu/);<br>
+Single cell samples from NCBI gene expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/; GSE138709, GSE159929);<br>
+Gene set LM22 matrix obtained from CIBERSORT website (https://cibersortx.stanford.edu/);<br>
+The collection of 16 immune-related gene sets contains 929 genes from TISCH2(http://tisch.comp-genomics.org/).
+
 # Acknowledgments
 &nbsp;&nbsp;&nbsp;&nbsp;The authors would like to thank Professor Ying Xu’s team from the School of Medicine of Southern University of Science and Technology and Professor Renchu Guan’s team from the School of Computer Science and Technology of Jilin University for their help and support in this research. They would also like to thank the organizations behind the online public database platforms mentioned in the study.
 
