@@ -2,11 +2,11 @@
 Multi-Omics-Profiling-Unveils-the-Complexity-and-Dynamics-of-Immune-Infiltrates-in-ICC
 
 # Highlights
-In the immune response mechanism of intrahepatic cholangiocarcinoma, the activation effect of antigen-presenting cells (such as B cells and macrophages) on T cells is enhanced, while the activation effect on Natural Killer cells is weakened.
-Infiltrating immune cells within the tumor microenvironment of intrahepatic cholangiocarcinoma exhibit varying immunoreactivity levels.
-The joint analysis of multi-omics data reveals the existence of four distinct infiltrating immune cell subpopulations, each possessing unique characteristics, within the tumor microenvironment of intrahepatic cholangiocarcinoma.
-The immune response model of intrahepatic cholangiocarcinoma has been revised, updated, and constructed.
-Novel methodology is implemented to examine alterations in immune cell activity, and a relatively innovative analytical procedure is devised.
+  In the immune response mechanism of intrahepatic cholangiocarcinoma, the activation effect of antigen-presenting cells (such as B cells and macrophages) on T cells is enhanced, while the activation effect on Natural Killer cells is weakened.
+  Infiltrating immune cells within the tumor microenvironment of intrahepatic cholangiocarcinoma exhibit varying immunoreactivity levels.
+  The joint analysis of multi-omics data reveals the existence of four distinct infiltrating immune cell subpopulations, each possessing unique characteristics, within the tumor microenvironment of intrahepatic cholangiocarcinoma.
+  The immune response model of intrahepatic cholangiocarcinoma has been revised, updated, and constructed.
+  Novel methodology is implemented to examine alterations in immune cell activity, and a relatively innovative analytical procedure is devised.
 
 # Innovation
 I. From the perspective of bioinformatics
@@ -15,7 +15,7 @@ I. From the perspective of bioinformatics
 
 II. From the perspective of analytical methods
 1) According to the previous analytical methods, the cell proportion index is used to evaluate cell activity (such as Cibersort, xCell, etc.) for cell activity analysis. The larger the proportion, the stronger the activity is. However, under the guidance of clinical prior knowledge, we found that the cell proportion is easily affected by the cardinality (the denominator of the proportion), and it is mistakenly believed that the proportion decreases and its activity decreases. Because when a certain cell proliferates a certain number, its activity is essentially enhanced. However, because the number of other cells proliferates more, resulting in a greater increase in the cardinality, it will produce the illusion that the proportion result is smaller.  
-Therefore, our analysis of cell activity is to observe the change in the slope of the regression line in the regression analysis. That is, the ssGSEA analysis method is used to calculate the enrichment score (which can be considered as the immune activity expression value) of each immune cell in the sample on the 16 immune-related gene sets we collected from TISCH2. Then, regression analysis is performed on the immune activity expression values ​​and proportions of B cells, macrophages, T cells, and NK cells. The slope of the regression line in the control group can be considered as the immune cell activity in a healthy state, and the slope of the regression line in the tumor group can be considered as the immune cell activity in a cancerous state. It can be observed that the slope of all regression lines is k>0. Because the immune activity expression value and proportion are positively correlated. The focus is to look at the slope k1 of the control group and the slope k2 of the tumor group, and observe the state of k1 changing to k2.  
+  Therefore, our analysis of cell activity is to observe the change in the slope of the regression line in the regression analysis. That is, the ssGSEA analysis method is used to calculate the enrichment score (which can be considered as the immune activity expression value) of each immune cell in the sample on the 16 immune-related gene sets we collected from TISCH2. Then, regression analysis is performed on the immune activity expression values ​​and proportions of B cells, macrophages, T cells, and NK cells. The slope of the regression line in the control group can be considered as the immune cell activity in a healthy state, and the slope of the regression line in the tumor group can be considered as the immune cell activity in a cancerous state. It can be observed that the slope of all regression lines is k>0. Because the immune activity expression value and proportion are positively correlated. The focus is to look at the slope k1 of the control group and the slope k2 of the tumor group, and observe the state of k1 changing to k2.  
 2) We designed a different analysis process.  
   a> The immune activity expression values ​​of the samples were clustered according to the sum of square differences to separate the high, medium and low immune activity groups. The tumor purity of the three groups was also verified, and the results were consistent;<br>
   b> The high and low immune activity groups were differentially analyzed to screen out significant differential genes, and then WGCNA was used to further screen the differential genes to obtain four modular significant genes;<br>
@@ -25,5 +25,5 @@ Therefore, our analysis of cell activity is to observe the change in the slope o
   f> At the end of the process, we selected four subsets of immune cells. And observed the significant genes corresponding to the subgroups and the performance of the enriched pathways.
 
 # Acknowledgments
-The authors would like to thank Professor Ying Xu’s team from the School of Medicine of Southern University of Science and Technology and Professor Renchu Guan’s team from the School of Computer Science and Technology of Jilin University for their help and support in this research. They would also like to thank the organizations behind the online public database platforms mentioned in the study.
+  The authors would like to thank Professor Ying Xu’s team from the School of Medicine of Southern University of Science and Technology and Professor Renchu Guan’s team from the School of Computer Science and Technology of Jilin University for their help and support in this research. They would also like to thank the organizations behind the online public database platforms mentioned in the study.
 
