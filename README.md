@@ -1,5 +1,5 @@
 # Immune-ICC
-Multi-Omics-Profiling-Unveils-the-Complexity-and-Dynamics-of-Immune-Infiltrates-in-ICC
+Title: Multi-Omics-Profiling-Unveils-the-Complexity-and-Dynamics-of-Immune-Infiltrates-in-ICC
 
 # Highlights
 &nbsp;&nbsp;&nbsp;&nbsp;1. In the immune response mechanism of intrahepatic cholangiocarcinoma, the activation effect of antigen-presenting cells (such as B cells and macrophages) on T cells is enhanced, while the activation effect on Natural Killer cells is weakened.<br>
