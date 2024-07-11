@@ -25,7 +25,7 @@ II. From the perspective of analytical methods
 &nbsp;&nbsp;&nbsp;&nbsp;f> At the end of the process, we selected four subsets of immune cells. And observed the significant genes corresponding to the subgroups and the performance of the enriched pathways.
 
 # Data Availability Statement
-&nbsp;&nbsp;&nbsp;&nbsp;The authors used publicly available datasets.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;We used publicly available datasets.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;The ICC transcriptome samples and their corresponding clinical phenotypes from GDC data portal (https://portal.gdc.cancer.gov/);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;UCSC Xena portal (https://xena.ucsc.edu/);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Single cell samples from NCBI gene expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/; GSE138709, GSE159929);<br>
@@ -33,5 +33,5 @@ II. From the perspective of analytical methods
 &nbsp;&nbsp;&nbsp;&nbsp;The collection of 16 immune-related gene sets contains 929 genes from TISCH2(http://tisch.comp-genomics.org/).
 
 # Acknowledgments
-&nbsp;&nbsp;&nbsp;&nbsp;The authors would like to thank Professor Ying Xu’s team from the School of Medicine of Southern University of Science and Technology and Professor Renchu Guan’s team from the School of Computer Science and Technology of Jilin University for their help and support in this research. They would also like to thank the organizations behind the online public database platforms mentioned in the study.
+&nbsp;&nbsp;&nbsp;&nbsp;We would like to thank Professor Ying Xu’s team from the School of Medicine of Southern University of Science and Technology and Professor Renchu Guan’s team from the School of Computer Science and Technology of Jilin University for their help and support in this research. We would also like to thank the organizations behind the online public database platforms mentioned in the study.
 
