@@ -2,11 +2,11 @@
 Multi-Omics-Profiling-Unveils-the-Complexity-and-Dynamics-of-Immune-Infiltrates-in-ICC
 
 # Highlights
-&nbsp;&nbsp;&nbsp;&nbsp;In the immune response mechanism of intrahepatic cholangiocarcinoma, the activation effect of antigen-presenting cells (such as B cells and macrophages) on T cells is enhanced, while the activation effect on Natural Killer cells is weakened.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Infiltrating immune cells within the tumor microenvironment of intrahepatic cholangiocarcinoma exhibit varying immunoreactivity levels.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The joint analysis of multi-omics data reveals the existence of four distinct infiltrating immune cell subpopulations, each possessing unique characteristics, within the tumor microenvironment of intrahepatic cholangiocarcinoma.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The immune response model of intrahepatic cholangiocarcinoma has been revised, updated, and constructed.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Novel methodology is implemented to examine alterations in immune cell activity, and a relatively innovative analytical procedure is devised.
+&nbsp;&nbsp;&nbsp;&nbsp;1. In the immune response mechanism of intrahepatic cholangiocarcinoma, the activation effect of antigen-presenting cells (such as B cells and macrophages) on T cells is enhanced, while the activation effect on Natural Killer cells is weakened.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. Infiltrating immune cells within the tumor microenvironment of intrahepatic cholangiocarcinoma exhibit varying immunoreactivity levels.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3. The joint analysis of multi-omics data reveals the existence of four distinct infiltrating immune cell subpopulations, each possessing unique characteristics, within the tumor microenvironment of intrahepatic cholangiocarcinoma.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4. The immune response model of intrahepatic cholangiocarcinoma has been revised, updated, and constructed.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;5. Novel methodology is implemented to examine alterations in immune cell activity, and a relatively innovative analytical procedure is devised.
 
 # Innovation
 I. From the perspective of bioinformatics
