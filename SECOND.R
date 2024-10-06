@@ -567,12 +567,23 @@ group=sapply(strsplit(group,""),"[",1)
 pro_immune<-rbind(pro_immune[group==0,],pro_immune[group==1,])
 pro_immune$type<-c(rep("Tumor",17),rep("Control",5))
 
+
+df<-pro_immune
+df<-df[1:17,c(4,15)]
+df<-df[18:22,c(4,15)]
+
+model_nk_t<-lm(`NK cells proportion`~`NK cells immuneScore`-1,data=df)
+summary(model_nk_t)
+
+model_nk_n<-lm(`NK cells proportion`~`NK cells immuneScore`-1,data=df)
+summary(model_nk_n)
+
 pdf("./DOC_PIC/NK_lineplot.pdf",height=4,width=6)
 ggplot(pro_immune,aes(x=`NK cells immuneScore`,y=`NK cells proportion`,color=type,fill=type))+
   geom_point(size=4,shape=21)+
-  geom_smooth(method = "lm",fullrange=TRUE,size=1.5)+
-  scale_color_manual(values = c("#00cc99","red"))+  
-  scale_fill_manual(values = c("#a2cd5a","#cdcd00"))+
+  geom_smooth(method = "lm",formula=y~x,fullrange=F,size=1.5,se=T)+
+  scale_color_manual(values = c("#006b3c","#3f00ff"))+  
+  scale_fill_manual(values = c("#429d75","#c4b4f3"))+
   theme_classic()+ #设置图背景，我常用theme_classic()，或者theme_test，或者theme_minimal
   theme(axis.line.x=element_line(color="black",size=0.8),
         axis.ticks.x=element_line(color="black",size=0.8),
@@ -585,13 +596,24 @@ ggplot(pro_immune,aes(x=`NK cells immuneScore`,y=`NK cells proportion`,color=typ
         legend.title = element_text(size = 12,face = "bold"),
         legend.key.size = unit(0.3,"inches"))
 dev.off()
+
+
+df<-pro_immune
+df<-df[1:17,c(3,13)]
+df<-df[18:22,c(3,13)]
+
+model_t_t<-lm(`T cells proportion`~`T cells immuneScore`-1,data=df)
+summary(model_t_t)
+model_t_n<-lm(`T cells proportion`~`T cells immuneScore`-1,data=df)
+summary(model_t_n)
+
 
 pdf("./DOC_PIC/T_lineplot.pdf",height=4,width=6)
 ggplot(pro_immune,aes(x=`T cells immuneScore`,y=`T cells proportion`,color=type,fill=type))+
   geom_point(size=4,shape=21)+
-  geom_smooth(method = "lm",fullrange=TRUE,size=1.5)+
-  scale_color_manual(values = c("#00cc99","red"))+  
-  scale_fill_manual(values = c("#a2cd5a","#acace6"))+
+  geom_smooth(method = "lm",formula=y~x,fullrange=F,size=1.5,se=T)+
+  scale_color_manual(values = c("#006b3c","#ff8c00"))+  
+  scale_fill_manual(values = c("#429d75","#dbaf79"))+
   theme_classic()+ #设置图背景，我常用theme_classic()，或者theme_test，或者theme_minimal
   theme(axis.line.x=element_line(color="black",size=0.8),
         axis.ticks.x=element_line(color="black",size=0.8),
@@ -604,13 +626,24 @@ ggplot(pro_immune,aes(x=`T cells immuneScore`,y=`T cells proportion`,color=type,
         legend.title = element_text(size = 12,face = "bold"),
         legend.key.size = unit(0.3,"inches"))
 dev.off()
+
+
+df<-pro_immune
+df<-df[1:17,c(1,14)]
+df<-df[18:22,c(1,14)]
+
+model_b_t<-lm(`B cells proportion`~`B cells immuneScore`-1,data=df)
+summary(model_b_t)
+model_b_n<-lm(`B cells proportion`~ `B cells immuneScore`-1,data=df)
+summary(model_b_n)
+
 
 pdf("./DOC_PIC/B_lineplot.pdf",height=4,width=6)
 ggplot(pro_immune,aes(x=`B cells immuneScore`,y=`B cells proportion`,color=type,fill=type))+
   geom_point(size=4,shape=21)+
-  geom_smooth(method = "lm",fullrange=TRUE,size=1.5)+
-  scale_color_manual(values = c("#00cc99","red"))+  
-  scale_fill_manual(values = c("#a2cd5a","#cd6600"))+
+  geom_smooth(method = "lm",formula=y~x,fullrange=F,size=1.5,se=T)+
+  scale_color_manual(values = c("#006b3c","#318ce7"))+  
+  scale_fill_manual(values = c("#429d75","#89cff0"))+
   theme_classic()+ #设置图背景，我常用theme_classic()，或者theme_test，或者theme_minimal
   theme(axis.line.x=element_line(color="black",size=0.8),
         axis.ticks.x=element_line(color="black",size=0.8),
@@ -623,13 +656,22 @@ ggplot(pro_immune,aes(x=`B cells immuneScore`,y=`B cells proportion`,color=type,
         legend.title = element_text(size = 12,face = "bold"),
         legend.key.size = unit(0.3,"inches"))
 dev.off()
+
+df<-pro_immune
+df<-df[1:17,c(6,18)]
+df<-df[18:22,c(6,18)]
+
+model_m_t<-lm(`Macrophages proportion`~`Macrophages immuneScore`-1,data=df)
+summary(model_m_t)
+model_m_n<-lm(`Macrophages proportion`~`Macrophages immuneScore`-1,data=df)
+summary(model_m_n)
 
 pdf("./DOC_PIC/Macrophages_lineplot.pdf",height=4,width=6)
-ggplot(pro_immune,aes(x=`Macrophages immuneScore`,y=`Macrophages proportioin`,color=type,fill=type))+
+ggplot(pro_immune,aes(x=`Macrophages immuneScore`,y=`Macrophages proportion`,color=type,fill=type))+
   geom_point(size=4,shape=21)+
-  geom_smooth(method = "lm",fullrange=TRUE,size=1.5)+
-  scale_color_manual(values = c("#00cc99","red"))+  
-  scale_fill_manual(values = c("#a2cd5a","#eaa221"))+
+  geom_smooth(method = "lm",formula=y~x,fullrange=F,size=1.5,se=T)+
+  scale_color_manual(values = c("#006b3c","#ff5349"))+  
+  scale_fill_manual(values = c("#429d75","#f4b2aa"))+
   theme_classic()+ #设置图背景，我常用theme_classic()，或者theme_test，或者theme_minimal
   theme(axis.line.x=element_line(color="black",size=0.8),
         axis.ticks.x=element_line(color="black",size=0.8),
@@ -642,4 +684,3 @@ ggplot(pro_immune,aes(x=`Macrophages immuneScore`,y=`Macrophages proportioin`,co
         legend.title = element_text(size = 12,face = "bold"),
         legend.key.size = unit(0.3,"inches"))
 dev.off()
-
